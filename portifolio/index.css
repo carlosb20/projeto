@@ -139,11 +139,10 @@ body{
 }
 }
     
-.descricao {
-    
-    color: #bac0c78f;
-    padding-left: 20px;
-    margin: 10px;
+.descricao p{
+
+    margin: 3px;
+    color: #000;
     
 }
 
