@@ -11,12 +11,12 @@ body{
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     
 }
 
 .nav01 {
     width: 100%;
-    
     background-color: #1b1a1a;
     padding: 15px ;
     border-bottom: 1px solid #636161;
@@ -76,7 +76,7 @@ body{
 #inicio{
     
     padding-top: 40px;
-    border-bottom: #d42525;
+   
     
     div{
         width: 100%;
@@ -84,23 +84,24 @@ body{
         flex-direction: column;
         justify-content: center;
         padding: 10px;
-        text-shadow: 1px 1px 1px rgb(194, 168, 168);
         color: #4e4b4b;
         font-size: 20px; 
     p{
-    padding-left: 15px;
-    text-shadow: 1px 1px 1px rgb(192, 169, 169);
-    color: #4d4b4b;
-    font: 0.9em sans-serif;
+        
+        padding-left: 15px;
+        margin:2px ;
+        color: #0b5bf0df;
+        font: 0.9em sans-serif;
 }  
 }
 }
 
 .imagem{
     
-    height:75vh;
+    height:100vh;
     align-items: center;
-    margin: 0;  
+    margin: 0; 
+     
 }
 
 .imagem img{
@@ -110,16 +111,36 @@ body{
     border-radius: 15em; 
     background-color: rgb(14, 87, 223); 
     border: 5px solid rgb(197, 187, 187);
-    animation: exemplo 0.5s ease-in-out infinite alternate;
-    
+    animation: exemplo 0.5s ease-in-out infinite alternate;   
       
 }
 
+@keyframes exemplo {
+    
+    from {transform: translateY(2px)}
+    to {transform: translateY(-2px)}
+}
+
+
+.efeito:hover{
+    width: 130px;
+
+    border: 1px solid rgb(197, 187, 187);
+    border-radius: 5px;
+    color: #000;
+    transition: 1000ms;
+        
+}
+    
+
+
 .evento{
     
-    padding-top: 15px;
-    border-bottom: #d42525;
-    margin: 20px;
+    
+    padding-top: 40px;
+    margin-top: 40px;
+    margin: 0 10px 0 10px;
+    border-radius: 0.5rem;
     
     div{
     
@@ -129,6 +150,7 @@ body{
     border-radius: 5px;
     text-shadow: 1px 1px 1px rgb(192, 169, 169);
     color: #e2dddd;
+    margin: 10px;
 
     &:hover{
         
@@ -138,15 +160,7 @@ body{
     }
 }
 }
-    
-.descricao {
-    
-    color: #bac0c78f;
-    padding-left: 20px;
-    margin: 10px;
-    
-}
-
+   
 
 
 #sobre{
@@ -170,29 +184,179 @@ body{
         }
 
         h1{
-            font-size: 27px;
+            font-size: 25px;
         }
         
     }
 }
 
+.menu{
     
-@keyframes exemplo {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #0b5bf0b7;
+    position: absolute;
+    z-index: 1;
+    margin: 5px;
+    display: none;
     
-    from {transform: translateY(2px)}
-    to {transform: translateY(-2px)}
-  }
 
-@media (max-width: 370px) {
+    ul{
+    
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+   
+    
+    li{
+       
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+       
+        
+    a{
+        
+        text-decoration: none;
+        color: rgb(230, 221, 221);
+        font-size: 16px;
+        
+        
+    }
+       
+    } 
+    }
+
+}
+
+.dark-mode{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    
+}
+
+.dark-mode img{
+    color: white;
+    width: 15px;
+    height: 15px; 
+    
+}
+
+.dark{
+    
+    filter: brightness(0) invert(1);
+    
+} 
+    
+
+
+@media (max-width: 370px){
     
    .texto h1{
         font-size: 22px;
-        margin-top: 5px;
+        margin-top: -50px;
    } 
     
    .imagem img{
         width: 250px;
         height: 250px;
-       border-radius: 15em;
+        border-radius: 15em;
    }
+   .nav01{
+        display: none;
+   }
+   .tela{
+      
+      color: white;
+      padding: 5px;
+     
+    }
+   
+  
+   
+}
+
+footer{
+   
+    padding: 10px;
+    background-color: #0a0a0a;
+    color: #e2dddd;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 1px 1px 1px rgb(192, 169, 169);
+}
+
+footer p{
+    padding: 10px;
+    font-size: 15px;
+}
+
+@media (min-width: 371px) {
+    
+    .tela{
+        display: none;
+    }
+
+    footer p{
+    
+    font-size: 25px;
+   
+} 
+
+}
+
+@media screen and (max-width: 367px) and (orientation: landscape) {
+    .texto h1{
+        color: rgba(255, 255, 0, 0.497);
+        font-size: 30px;
+        margin-top: -50px;
+    }
+    .texto{
+        margin-left: -70px;
+    }
+    .nav01{
+        display: none;
+    }
+
+    .dark-mode{
+        display: flex; 
+        width: 100%;
+        padding: 10px;
+        align-items: center; 
+       
+    }
+    .tela{
+        
+        display: flex;
+        width: 100%; 
+        flex-direction: column; 
+       
+       }
+
+    .menu{
+       display: flex;
+       width: 150px;
+       height: 185px;
+       flex-direction: column;
+       margin: 35px 0px 10px 5px;
+        
+    }
+
+    #barra{
+        color: white;
+       
+       
+    }
+    .imagem img{
+        width: 200px;
+        height: 200px;
+        border-radius: 15em;
+    }
+
+    
+    
 }
