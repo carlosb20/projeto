@@ -35,7 +35,7 @@ pm4.addEventListener('click', () => {
         play.style.backgroundColor = 'rgba(116, 182, 85, 0.33)';
         
         const video = document.createElement('video');
-        video.src = './imgens/videoaula.mp4';
+        video.src = './portifolio/imgens/videoaula.mp4';
         video.style.width = '100%';
         video.controls = true;
         play.appendChild(video);
@@ -61,7 +61,7 @@ pm42.addEventListener('click', () => {
         play2.style.borderRadius = '5px';
         play2.style.backgroundColor = 'rgba(116, 182, 85, 0.33)';
         const video = document.createElement('video');
-        video.src = './video/jogo-matematica.mp4';
+        video.src = './portifolio/video/jogo-matematica.mp4';
         video.style.width = '100%';
         video.controls = true;
         play2.appendChild(video);
@@ -89,7 +89,7 @@ pm43.addEventListener('click', () => {
         play3.style.backgroundColor = 'rgba(116, 182, 85, 0.33)';
 
         const video = document.createElement('video');
-        video.src = './video/sistema-bancario.mp4';
+        video.src = './portifolio/video/sistema-bancario.mp4';
         video.style.width = '100%';
         video.controls = true;
         play3.appendChild(video);
@@ -117,7 +117,7 @@ pm44.addEventListener('click', () => {
         play4.style.backgroundColor = 'rgba(116, 182, 85, 0.33)';
 
         const video = document.createElement('video');
-        video.src = './video/django-video.mp4';
+        video.src = './portifolio/video/django-video.mp4';
         video.style.width = '100%';
         video.controls = true;
         play4.appendChild(video);
