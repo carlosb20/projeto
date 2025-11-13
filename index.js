@@ -35,7 +35,9 @@ pm4.addEventListener('click', () => {
         play.style.backgroundColor = 'rgba(116, 182, 85, 0.33)';
         
         const video = document.createElement('video');
-        video.src = './portifolio/imgens/videoaula.mp4';
+
+        video.src = './portifolio/video/videoaula.mp4';
+
         video.style.width = '100%';
         video.controls = true;
         play.appendChild(video);
